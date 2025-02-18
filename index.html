@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Hero section -->
+    <section id="hero">
+        <div class="container">
+            <h1 class="hero-text">Hi i'm <span id="name">Karolina Kujel</span> 
+            <br> i will organize your space</h1>
+            <button class="primary-btn">See more</button>
+            <button class="secondary-btn">Get in touch</button>
+        </div>
+    </section>
+    <!-- About me section -->
+    <section id="about-me">
+        <div class="about-container">
+        <div class="text-container">
+            <h2 class="section-heading">About me</h2>
+            <p class="about-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus nam et praesentium deserunt tempora distinctio commodi repudiandae exercitationem minima soluta accusantium aliquam illum ad, at unde alias nostrum quia ipsa?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum dolores fuga iusto unde mollitia vitae rerum placeat expedita impedit, a ut quibusdam quos et laborum laudantium earum doloremque inventore? Distinctio?</p>
+        </div>
+        <div class="image-container">
+            <div class="image-wrapper">
+            </div>
+        </div>
+        </div>
+        <div class="about-container">
+            <div class="image-container">
+                <div class="image-wrapper item-1"></div>
+            </div>
+            <div class="text-container">
+                <h2 class="section-heading">Why to choose me?</h2>
+                <p class="about-paragraph item-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus nam et praesentium deserunt tempora distinctio commodi repudiandae exercitationem minima soluta accusantium aliquam illum ad, at unde alias nostrum quia ipsa?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum dolores fuga iusto unde mollitia vitae rerum placeat expedita impedit, a ut quibusdam quos et laborum laudantium earum doloremque inventore? Distinctio?</p>
+            </div>
+            </div>
+     </section>
+    <!-- My services -->
+     <section id="services">
+            <h2 class="section-heading">My services</h2>
+            <div class="services-container">
+            <div class="wrapper">
+                <i class="fas fa-solid fa-arrow-up-short-wide"></i>
+                <h3>Decluttering</h3>
+                <p class="paragraphs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus soluta quo illum voluptas reprehenderit? Sapiente nobis aut magnam laborum et fuga magni incidunt asperiores expedita, dignissimos dolore id possimus veniam?</p>
+                <h3>20$</h3>
+                <button class="small-btn primary-btn">Read More</button>
+            </div>
+            <div class="wrapper">
+                <i class="fas fa-solid fa-list-check"></i>
+                <h3>Space planning</h3>
+                <p class="paragraphs">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam sint iste nostrum excepturi, corporis veritatis, quam nam natus, doloribus cumque dolor fugit neque beatae adipisci obcaecati est. Eaque, sapiente tenetur!</p>
+                <h3>20$</h3>
+                <button class="small-btn primary-btn">Read More</button>
+            </div>
+            <div class="wrapper">
+                <i class="fas fa-solid fa-box-open"></i>
+                <h3>Moving</h3>
+                <p class="paragraphs">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae qui sed cupiditate dolore maiores fugit nobis exercitationem, laudantium similique distinctio dolor corporis molestiae ad, expedita sint quos in porro neque!</p>
+                <h3>20$</h3>
+                <button class="small-btn primary-btn">Read More</button>
+            </div>
+            <div class="wrapper">
+                <i class="fas fa-solid fa-recycle"></i>
+                <h3>Space organization</h3>
+                <p class="paragraphs">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae qui sed cupiditate dolore maiores fugit nobis exercitationem, laudantium similique distinctio dolor corporis molestiae ad, expedita sint quos in porro neque!</p>
+                <h3>20$</h3>
+                <button class="small-btn primary-btn">Read More</button>
+            </div>
+        </div>
+        <button class="secondary-btn price-btn">Book now</button>
+     </section>
+    <!-- Contacts section -->
+     <section id="contacts">
+        <h1 class="actioncall">Let's get it cleaned up</h1>
+        <div class="contacts-container">
+        <div id="form-container">
+            <h2 class="form-heading">Leave us a message</h2>
+            <form id="form" novalidate>
+                <div class="form-element">
+                    <label for="fname">Full Name</label>
+                    <input type="text" id="fname" placeholder="Enter name" name="name"
+                           required minlength="3" maxlength="50">
+                </div>
+                <div class="form-element">
+                    <label for="phonenum">Phone Number</label>
+                    <input type="tel" id="phonenum" placeholder="444-444-4444" name="phone"
+                            required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                </div>
+                <div class="form-element">
+                    <label for="email">Email Adress</label>
+                    <input type="email" id="email" placeholder="example@example.com" name="email"
+                            required>
+                </div>
+                <div class="form-message">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Enter message here" name="message" required></textarea>
+                </div>
+                <button id="form-button" type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="container"> 
+             
+        </div>
+     </section>
+    <!--Script-->
+    <script src="script.js"></script>
+</body>
+</html>
