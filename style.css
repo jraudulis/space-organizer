@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Vujahday+Script&display=swap');
 html {
-
+    scroll-behavior: smooth;
     box-sizing: border-box;
 }
 
@@ -15,6 +15,25 @@ body{
     text-align: center;
 }
 
+.soc-container {
+    position: absolute;
+    top: 0;
+}
+
+.socials {
+    font-size: 25px;
+    color: #A8B5A2;
+    margin: 25px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.socials:hover {
+    transform: scale(1.1);
+    color: #87997f;
+}
+
+
 .fas{
     font-size: 50px;
     color: #A8B5A2;
@@ -23,18 +42,21 @@ body{
 #hero {
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
 .container{
-    margin-left: 50px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .hero-text {
     font-family: "Poppins", serif;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 4rem;
-    text-align: left;
+    text-align: center;
 }
 
 .section-heading {
@@ -193,18 +215,24 @@ h3{
     letter-spacing: 1.5px;
 }
 
-#contacts{
-    height: 100vh;
+.actioncall {
+    font-family: "Poppins", serif;
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 800;
 }
 
-.contacts-container{
+#contacts{
+    height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 /* Form styling */
 #form-container {
-    height: 500px;
+    height: 80vh;
     width: 600px;
     display: flex;
     flex-direction: column;
@@ -251,13 +279,14 @@ input {
     transition: all 0.3s;
 }
 
-input:valid {
+input:valid, textarea:valid {
     border: 1px solid green;
 }
 
-input:invalid {
+input:invalid, textarea:invalid {
     border: 1px solid red;
 }
+
 
 h1 {
     text-align: center;
@@ -286,7 +315,7 @@ button:focus {
 }
 
 #footer {
-    width: 90%;
+    width: 100%;
     border-radius: 5px;
     margin-top: 10px;
     border: 1px solid black;
@@ -295,11 +324,6 @@ button:focus {
     align-items: center;
 }
 
-.actioncall{
-    font-family: "Poppins", serif;
-    font-size: 3rem;
-    font-weight: 700;
-}
 
 /* Responsive Design */
 @media (max-width: 900px) {
