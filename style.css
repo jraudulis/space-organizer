@@ -279,11 +279,11 @@ input {
     transition: all 0.3s;
 }
 
-input:valid, textarea:valid {
+input:valid.user-touched, textarea:valid.user-touched {
     border: 1px solid green;
 }
 
-input:invalid, textarea:invalid {
+input:invalid.user-touched, textarea:invalid.user-touched {
     border: 1px solid red;
 }
 
@@ -334,7 +334,7 @@ button:focus {
     }
 
     .hero-text{
-        font-size: 3.5rem;
+        font-size: 3rem;
         font-weight: 700;
         text-align: center;
     }
